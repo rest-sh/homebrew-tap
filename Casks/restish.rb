@@ -3,7 +3,7 @@ cask "restish" do
   name "restish"
   desc "Restish is a CLI for interacting with REST-ish HTTP APIs with some nice features built-in."
   homepage "https://rest.sh"
-  version "0.21.0-hbfix.0"
+  version "0.21.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "restish" do
   on_macos do
     on_intel do
       url "https://github.com/rest-sh/restish/releases/download/v#{version}/restish-#{version}-darwin-amd64.tar.gz"
-      sha256 "38cc347b46bba5eddb4c3eab8f91b5eb59fde736039ecfb294baca486803de4b"
+      sha256 "14ad7fc81eff201b3ec0b6d175a4fc33fc64e24f7de1ed8f9332828a82920bea"
     end
     on_arm do
       url "https://github.com/rest-sh/restish/releases/download/v#{version}/restish-#{version}-darwin-arm64.tar.gz"
-      sha256 "a7a98651e2418bc5e7417182ac379bb18f91b015aad101ebb599f18b0c4d99c4"
+      sha256 "d44235fbd13ad7cec1e1df040877b7aad6a39838b7e824024a4637af713d5d40"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/rest-sh/restish/releases/download/v#{version}/restish-#{version}-linux-amd64.tar.gz"
-      sha256 "4e3aca2ae4066c594d641b089f2c97afc332c0b865c0243286ca931fa4bad5e3"
+      sha256 "43e1af1fda2c10ee54adfa1d8424658a9452959c240bf4a95674bf14b30257c0"
     end
     on_arm do
       url "https://github.com/rest-sh/restish/releases/download/v#{version}/restish-#{version}-linux-arm64.tar.gz"
-      sha256 "14a986484027871c922bdc68a43531516525a27641ff6670e6a57c29bfe4ba42"
+      sha256 "2f6d17b5c2ff916d3829a2ff92ccb41a071152e587467efa19267e976640ece0"
     end
   end
 
