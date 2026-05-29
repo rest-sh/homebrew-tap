@@ -5,21 +5,21 @@
 class RestishCsv < Formula
   desc "Restish plugin for CSV output formatting"
   homepage "https://rest.sh/"
-  version "2.0.0"
+  version "2.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rest-sh/restish/releases/download/v2.0.0/restish-csv-2.0.0-darwin-amd64.tar.gz"
-      sha256 "8a74d65b68f0395b31d891035648ebf7212ff4af30a480f04341b5e09ad86c39"
+      url "https://github.com/rest-sh/restish/releases/download/v2.1.0/restish-csv-2.1.0-darwin-amd64.tar.gz"
+      sha256 "5097eaa9063724f3e56b62ef8c276c692775b1b6258c24d73ef85a7178291ddb"
 
       def install
         bin.install "restish-csv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rest-sh/restish/releases/download/v2.0.0/restish-csv-2.0.0-darwin-arm64.tar.gz"
-      sha256 "931d2c778fbadfdb0b44637f3fb374766168a9077ec81c3607179f641ee13edc"
+      url "https://github.com/rest-sh/restish/releases/download/v2.1.0/restish-csv-2.1.0-darwin-arm64.tar.gz"
+      sha256 "f46af78066f90ec8ec6500967d7f1b4ac4feae18154caad189374f95c9a34dc7"
 
       def install
         bin.install "restish-csv"
@@ -29,15 +29,15 @@ class RestishCsv < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rest-sh/restish/releases/download/v2.0.0/restish-csv-2.0.0-linux-amd64.tar.gz"
-      sha256 "48dfe3796d9f1ab45fbc730da6bfdc1907a4d4318eafda9dd62ac83526a80236"
+      url "https://github.com/rest-sh/restish/releases/download/v2.1.0/restish-csv-2.1.0-linux-amd64.tar.gz"
+      sha256 "b053d24f6cab778c17c2a9b7cc8d390c1eaa3c93f7b0ed8b71f2edaa2b831a60"
       def install
         bin.install "restish-csv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rest-sh/restish/releases/download/v2.0.0/restish-csv-2.0.0-linux-arm64.tar.gz"
-      sha256 "7ee704285dc1bab5133a2b3bb52aa5092b358f7b2ef4e82fd766be83370d87c6"
+      url "https://github.com/rest-sh/restish/releases/download/v2.1.0/restish-csv-2.1.0-linux-arm64.tar.gz"
+      sha256 "4051d0b59bf44cea7d173bf824a2bfb85c32745f81046c2bc2174893458716c5"
       def install
         bin.install "restish-csv"
       end
