@@ -5,21 +5,21 @@
 class RestishBulk < Formula
   desc "Restish plugin for Git-like bulk resource management"
   homepage "https://rest.sh/"
-  version "2.1.0"
+  version "2.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rest-sh/restish/releases/download/v2.1.0/restish-bulk-2.1.0-darwin-amd64.tar.gz"
-      sha256 "48a71c8c75e94ea32d0e39e8fcf2521b86ae31f79048b5c1936d5911edf68959"
+      url "https://github.com/rest-sh/restish/releases/download/v2.1.1/restish-bulk-2.1.1-darwin-amd64.tar.gz"
+      sha256 "e798574b2f532b5c4d8147dc89d3555728f331ca4edaa8dcb8243d0a7e8a6c84"
 
       def install
         bin.install "restish-bulk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rest-sh/restish/releases/download/v2.1.0/restish-bulk-2.1.0-darwin-arm64.tar.gz"
-      sha256 "514db82ab5fc3ea45cb91b5ccc0da81f6df39ae6380cc2a7e76ecaf37f16fea9"
+      url "https://github.com/rest-sh/restish/releases/download/v2.1.1/restish-bulk-2.1.1-darwin-arm64.tar.gz"
+      sha256 "42306674f672bd03fa6b58b78cd0d8de5e48fab4fa1acb3eb124cfe4971842cc"
 
       def install
         bin.install "restish-bulk"
@@ -29,15 +29,15 @@ class RestishBulk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rest-sh/restish/releases/download/v2.1.0/restish-bulk-2.1.0-linux-amd64.tar.gz"
-      sha256 "fdc5e1eb744d9c72d3ecb8c6caf5005930e82f7658180f4740a59edd67b91940"
+      url "https://github.com/rest-sh/restish/releases/download/v2.1.1/restish-bulk-2.1.1-linux-amd64.tar.gz"
+      sha256 "bc7872f2a780453b24eecf83ad8b01ee3f76e346d6df8030fc65aaf64434b735"
       def install
         bin.install "restish-bulk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rest-sh/restish/releases/download/v2.1.0/restish-bulk-2.1.0-linux-arm64.tar.gz"
-      sha256 "299808cf7acc13dd8a31bf39c5b5847dd9fb1614af2d397ea45e241f4038c8f7"
+      url "https://github.com/rest-sh/restish/releases/download/v2.1.1/restish-bulk-2.1.1-linux-arm64.tar.gz"
+      sha256 "62220cab548395639d2f0245d0467ce00cbfa426879e0b09fe3cc281f4bb5c86"
       def install
         bin.install "restish-bulk"
       end
