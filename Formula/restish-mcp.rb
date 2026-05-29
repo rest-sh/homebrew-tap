@@ -5,21 +5,21 @@
 class RestishMcp < Formula
   desc "Restish plugin for exposing APIs as MCP tools"
   homepage "https://rest.sh/"
-  version "2.0.0"
+  version "2.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rest-sh/restish/releases/download/v2.0.0/restish-mcp-2.0.0-darwin-amd64.tar.gz"
-      sha256 "8591a9d624aa3b380020e43bfbd8a44a55b129238c6e0efee88decfce77c75e0"
+      url "https://github.com/rest-sh/restish/releases/download/v2.1.0/restish-mcp-2.1.0-darwin-amd64.tar.gz"
+      sha256 "67b2572b5f496540b6b44822566f576be47749552dcad808b79264e41eb03b02"
 
       def install
         bin.install "restish-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rest-sh/restish/releases/download/v2.0.0/restish-mcp-2.0.0-darwin-arm64.tar.gz"
-      sha256 "7b86d7ea1f805eb909832f534216bd051eefa459aa0728e2952cc7cdf6910e55"
+      url "https://github.com/rest-sh/restish/releases/download/v2.1.0/restish-mcp-2.1.0-darwin-arm64.tar.gz"
+      sha256 "b539d00c35e5b6892280aed2975337d19c508295a673a6e0cab41e741359dabb"
 
       def install
         bin.install "restish-mcp"
@@ -29,15 +29,15 @@ class RestishMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rest-sh/restish/releases/download/v2.0.0/restish-mcp-2.0.0-linux-amd64.tar.gz"
-      sha256 "f4774d46e859a1bd084e4d8ec56b9c2b230d868669b718aed9dbe0690948d96f"
+      url "https://github.com/rest-sh/restish/releases/download/v2.1.0/restish-mcp-2.1.0-linux-amd64.tar.gz"
+      sha256 "cea63d8bc292a1fda93b56620fe98c578497f5ff21abdb46649b1349b81904cc"
       def install
         bin.install "restish-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rest-sh/restish/releases/download/v2.0.0/restish-mcp-2.0.0-linux-arm64.tar.gz"
-      sha256 "975d0bc8554314f67bc1d35726639678af56a4189a5420aac7867a2b4d8af03c"
+      url "https://github.com/rest-sh/restish/releases/download/v2.1.0/restish-mcp-2.1.0-linux-arm64.tar.gz"
+      sha256 "1bd3ecb651b4a6fb81ef9bfc8710c32fbcf53d33d0a56d6bcadc2c6004743697"
       def install
         bin.install "restish-mcp"
       end
