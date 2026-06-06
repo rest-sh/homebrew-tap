@@ -5,21 +5,21 @@
 class RestishPkcs11 < Formula
   desc "Restish TLS signer plugin for PKCS#11 devices"
   homepage "https://rest.sh/"
-  version "2.1.2"
+  version "2.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rest-sh/restish/releases/download/v2.1.2/restish-pkcs11-2.1.2-darwin-amd64.tar.gz"
-      sha256 "3fbe58d383f64b6bc16b7a3ce2d7efe3008575cc5cb7569fe14696f1906a3dc2"
+      url "https://github.com/rest-sh/restish/releases/download/v2.2.0/restish-pkcs11-2.2.0-darwin-amd64.tar.gz"
+      sha256 "968663d263576f93751249ac502d1e4048dcd7f65972c4ea4ae86f5af9bde17d"
 
       def install
         bin.install "restish-pkcs11"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rest-sh/restish/releases/download/v2.1.2/restish-pkcs11-2.1.2-darwin-arm64.tar.gz"
-      sha256 "447f9f474ec98411a1c1b7638c8ef984b490e683d5c996d7133bb48c414bde18"
+      url "https://github.com/rest-sh/restish/releases/download/v2.2.0/restish-pkcs11-2.2.0-darwin-arm64.tar.gz"
+      sha256 "73e5db92bdd68b94e09adbec6655af3c03506f8bbcf6fcb15c88b3132cf68f98"
 
       def install
         bin.install "restish-pkcs11"
@@ -29,15 +29,15 @@ class RestishPkcs11 < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rest-sh/restish/releases/download/v2.1.2/restish-pkcs11-2.1.2-linux-amd64.tar.gz"
-      sha256 "05292d0e9eae20395cd7048479dac67ad5b4cc6b2a4cb7713b3b89b833ac31b9"
+      url "https://github.com/rest-sh/restish/releases/download/v2.2.0/restish-pkcs11-2.2.0-linux-amd64.tar.gz"
+      sha256 "b65c5cce24b595609ba7210bc7422c54e62913e35c2c5743fd0bf8964257b7cd"
       def install
         bin.install "restish-pkcs11"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rest-sh/restish/releases/download/v2.1.2/restish-pkcs11-2.1.2-linux-arm64.tar.gz"
-      sha256 "03888bc9268f15233c65cf3f3861b26a62503f146c33073c351945bf0359d2d9"
+      url "https://github.com/rest-sh/restish/releases/download/v2.2.0/restish-pkcs11-2.2.0-linux-arm64.tar.gz"
+      sha256 "8aba66774b1244976a995075ccb3e58f88cdefab314bf24b00277631ed88e583"
       def install
         bin.install "restish-pkcs11"
       end
