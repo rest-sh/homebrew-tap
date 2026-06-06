@@ -5,21 +5,21 @@
 class Restish < Formula
   desc "CLI for interacting with REST-ish HTTP APIs"
   homepage "https://rest.sh/"
-  version "2.1.2"
+  version "2.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rest-sh/restish/releases/download/v2.1.2/restish-2.1.2-darwin-amd64.tar.gz"
-      sha256 "d13a33ebe665988a224a945692c8904bc896df6668f2aac9afc358442e482bfa"
+      url "https://github.com/rest-sh/restish/releases/download/v2.2.0/restish-2.2.0-darwin-amd64.tar.gz"
+      sha256 "63c3d63629d31801f2887fa897a4d2b57b7b79686b6cbcef6084d18646705dc8"
 
       def install
         bin.install "restish"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rest-sh/restish/releases/download/v2.1.2/restish-2.1.2-darwin-arm64.tar.gz"
-      sha256 "eea512f644ffcfe282a72d8859d60f903fbd24b808fb7e12fcb1a1b2a4b909e4"
+      url "https://github.com/rest-sh/restish/releases/download/v2.2.0/restish-2.2.0-darwin-arm64.tar.gz"
+      sha256 "49adbe2541032ab0d0b6bda60a1f5b7bdfeee33ed681f5245a4a561e3acf1dc5"
 
       def install
         bin.install "restish"
@@ -29,15 +29,15 @@ class Restish < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rest-sh/restish/releases/download/v2.1.2/restish-2.1.2-linux-amd64.tar.gz"
-      sha256 "c3460834304040a3a99e5af8d1565a2bfa081b1f1c5a1d82142181560133f62d"
+      url "https://github.com/rest-sh/restish/releases/download/v2.2.0/restish-2.2.0-linux-amd64.tar.gz"
+      sha256 "b3f98bd9fd44d3178cfac69d71b1517f7098cf9c31d20977ea557dd220dbc238"
       def install
         bin.install "restish"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rest-sh/restish/releases/download/v2.1.2/restish-2.1.2-linux-arm64.tar.gz"
-      sha256 "c0994cd39126efbe377d7b31745d36f2e1c8a924de48790912432148618412e6"
+      url "https://github.com/rest-sh/restish/releases/download/v2.2.0/restish-2.2.0-linux-arm64.tar.gz"
+      sha256 "5b230fd7d1329f0291654b1e7c728b204ea2bdc25d666952f4a4c8457c5d4f15"
       def install
         bin.install "restish"
       end
